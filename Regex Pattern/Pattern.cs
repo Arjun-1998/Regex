@@ -29,6 +29,14 @@ namespace RegexPattern
         {
             return Regex.IsMatch(email, REGEX_EMAIL);
         }
+        public static string REGEX_MOBILENUMBER = "^[1-9]{2}[6-9]{1}[0-9]{9}$";
+
+
+        // method for valid phone number
+        public bool validateMobileNumber(string mnumber)
+        {
+            return Regex.IsMatch(mnumber, REGEX_MOBILENUMBER);
+        }
 
 
     }
