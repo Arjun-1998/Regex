@@ -17,8 +17,12 @@ namespace RegexPattern
             //string c = Console.ReadLine();
             //Console.WriteLine(pattern.validatePaswordRule1(c));
 
-            string d = Console.ReadLine();
-            Console.WriteLine(pattern.validatePaswordRule2(d));
+            //string d = Console.ReadLine();
+            //Console.WriteLine(pattern.validatePaswordRule2(d));
+
+             string e = Console.ReadLine();
+            Console.WriteLine(pattern.validatePaswordRule3(e));
+
         }
     }
 }

@@ -29,6 +29,12 @@ namespace RegexPattern
         {
             return Regex.IsMatch(email, REGEX_EMAIL);
         }
+
+        internal bool validatePaswordRule3(string? e)
+        {
+            throw new NotImplementedException();
+        }
+
         public static string REGEX_MOBILENUMBER = "^[1-9]{2}[6-9]{1}[0-9]{9}$";
 
 
@@ -50,9 +56,15 @@ namespace RegexPattern
         {
             return Regex.IsMatch(prule2, REGEX_PASSWORDRULE2);
         }
-
+        // method for passwordrule3
+        public static string PASSWORD_RULE3_REGEX = "^([a-zA-Z0-9])*[!@#$%^&*]{1}([a-zA-Z0-9])*$"; 
+        public bool PasswordRule3(string prule3)
+        {
+            return Regex.IsMatch(prule3, PASSWORD_RULE3_REGEX);
+        }
     }
 }
+
 
     
 
